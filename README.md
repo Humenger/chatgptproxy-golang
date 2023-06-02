@@ -11,19 +11,19 @@ import "github.com/Humenger/chatgptproxy-golang/ChatGptProxy"
 
 func main() {
 	chat := new(ChatGptProxy)
-	completions, err := chat.Completions("你好")
+	completions, err := chat.Completions("Hello")
 	if err != nil {
 		log.Fatalln(err)
 	} else {
 		log.Println(completions)
 	}
-	completions, err = chat.Completions("golang 随机生成一个[0-9a-z]的长度为16的字符串")
+	completions, err = chat.Completions("golang generates a random [0-9a-z] string of length 16")
 	if err != nil {
 		log.Fatalln(err)
 	} else {
 		log.Println(completions)
 	}
-	completions, err = chat.Completions("再生成一个")
+	completions, err = chat.Completions("Generate another")
 	if err != nil {
 		log.Fatalln(err)
 	} else {
