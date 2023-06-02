@@ -1,4 +1,4 @@
-module chatgptproxy-golang
+module github.com/Humenger/chatgptproxy-golang
 
 go 1.16
 
